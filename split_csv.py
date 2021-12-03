@@ -26,14 +26,10 @@ import pandas as pd
 import os
 import glob
 
-
-
-
-
 # flag
 file_ok = False
 
-# check to see if given file name works, if not ask again
+# check to see if input number works, if not ask again
 while file_ok is False:
 
     try:

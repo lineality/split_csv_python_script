@@ -7,6 +7,7 @@ an even number of split files (2, 4, 6, etc.)
 that collectively contain all of the data.
 Or
 Recombine parts that have been split.
+(To recombine, enter 'combine' instead of a split number.)
 
 For example, if one file is too big, and you want to make
 four smaller files that contain all the data.

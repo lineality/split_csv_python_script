@@ -24,7 +24,7 @@ For example:
 Running this script two times, each time set to: 2 (resulting files)
 is the same as running this script one time, set to 4 (resulting files).
 
-The original file is retained, but renamed as 
+The original file is retained, but renamed with
 ```
 _original
 ```

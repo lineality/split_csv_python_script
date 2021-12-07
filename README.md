@@ -33,4 +33,4 @@ added to the end. E.g.
 MY_FILE.csv_original
 ```
 
-This can be run as a python script or in a python notebook.
+This tool can be run as a python script or in a python notebook.

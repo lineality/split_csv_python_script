@@ -6,10 +6,11 @@
 
 This is a Python script to make split .csv files into 
 split files (2, 4, 8, 16, etc.)
-that collectively contain all of the data.
-Or
-Recombine parts that have been split.
-(To recombine, enter 'combine' instead of a split number.)
+that collectively contain or retain all of the data.
+&
+This is a Python script that can Recombine 
+parts that have been split.
+(To recombine, enter 'combine' instead of a split number as a parameter.)
 
 For example, if one file is too big, and you want to make
 four smaller files that contain all the data.

@@ -5,7 +5,7 @@
 # PLUS: Recombine Split Parts
 
 This is a Python script to make split .csv files into 
-an even number of split files (2, 4, 6, etc.)
+split files (2, 4, 8, 16, etc.)
 that collectively contain all of the data.
 Or
 Recombine parts that have been split.

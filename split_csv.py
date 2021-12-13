@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
 
 """
+2021.12.13
 Requires: pandas as pd
 
+inputs: main_split_csv_iterator(threshold = None, 
+                                number_of_splits = None, 
+                                combine = False)
+you can pick any of these 3 inputs, but one more than one.
+inputs must be put in when calling .py script, not from input-prompt.
 
-2021.12.13
 This is a Python script to make split .csv files into 
 an even number of split files (2, 4, 6, etc.)
 that collectively contain all of the data.

@@ -293,6 +293,37 @@ def check_threshold_OK_is_True_or_get_split_number( df, threshold ):
 
 def main_split_csv_iterator(threshold = None, number_of_splits = None, combine = False):
 
+    # flag
+    input_format_ok = False
+
+    # check to see if input number works, if not ask again
+    while input_format_ok is False:
+
+        try:
+            user_input = input("Say a split number or 'threshold' or 'combine'")
+
+            if user_input == 'threshold':
+              threshold = True
+              input_format_ok = True
+
+            elif user_input == 'combine':
+                combine = True
+                input_format_ok = True
+
+            else: 
+                # Ask how many files to split the file into?
+                number_of_splits = int( user_input )
+
+                input_format_ok = True
+
+        except:
+            input_format_ok is False
+            print("That did not work. Please try an even integer (like 1,2,3 etc.) or 'combine' or 'threshold'\n")
+
+    ####################
+    # Choose your path!
+    ####################
+
     if combine != False:
         # run combine_csv
         combine_csv()
@@ -304,6 +335,25 @@ def main_split_csv_iterator(threshold = None, number_of_splits = None, combine =
 
   
     elif threshold != None:
+
+        # flag
+        input_format_ok = False
+
+        # check to see if input number works, if not ask again
+        while input_format_ok is False:
+
+            try:
+                user_input = input("Set your threshold:")
+
+
+                # Ask how many files to split the file into?
+                threshold = int( user_input )
+
+                input_format_ok = True
+
+            except:
+                input_format_ok is False
+                print("That did not work. Please try an integer (like 2, 4, 6, etc.)")
 
 
         # make list of files
@@ -345,6 +395,6 @@ def main_split_csv_iterator(threshold = None, number_of_splits = None, combine =
 
 
 
-# main_split_csv_iterator(number_of_splits=2)
-# main_split_csv_iterator( threshold=10 )
+
+main_split_csv_iterator()
 

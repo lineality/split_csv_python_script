@@ -7,8 +7,8 @@ Requires: pandas as pd
 inputs: main_split_csv_iterator(threshold = None, 
                                 number_of_splits = None, 
                                 combine = False)
-you can pick any of these 3 inputs, but one more than one.
-inputs must be put in when calling .py script, not from input-prompt.
+
+The user prompt will ask you to select.
 
 This is a Python script to make split .csv files into 
 an even number of split files (2, 4, 6, etc.)

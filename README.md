@@ -4,7 +4,7 @@
 
 # PLUS: Recombine Split Parts
 
-Tsis is a Python script to make split .csv files into 
+This is a Python script to make split .csv files into 
 an even number of split files (2, 4, 6, etc.)
 that collectively contain all of the data.
 Or

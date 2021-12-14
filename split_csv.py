@@ -300,7 +300,13 @@ def main_split_csv_iterator(threshold = None, number_of_splits = None, combine =
     while input_format_ok is False:
 
         try:
-            user_input = input("Say a split number or 'threshold' or 'combine'")
+            user_input = input("""
+            This function splits csv files in this directory
+            or re-combines split pieces.
+            Input a number of times to split the file,
+            or say 'threshold' to set a file-size limit,
+            or say 'combine' to recombine split pieces: \n
+            """)
 
             if user_input == 'threshold':
               threshold = True
